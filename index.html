@@ -15,7 +15,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class="container-fluid">
   <!-- Navbar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   	  <!-- Titulo de inicio-->
@@ -37,9 +37,33 @@
 	        <a class="nav-link" href="#">Sucursales</a>
 	      </li>
 	  	</ul>
-	    <form class="form-inline my-2 my-lg-0">
-    	  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Carga tu CV</button>
-	    </form>
+	    <!-- Button trigger modal -->
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+		  Carga tu CV
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Dejanos tu CV para tenerte</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+		        	<!-- TERMINAR FORM -->
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+		        <button type="button" class="btn btn-primary">Cargar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 	  </div>
   </nav>
   <!-- Carrusel // only show in md + device-->
@@ -68,11 +92,17 @@
   </div>
   <!-- mobile photo // only show in xs sm device-->
   <div class="d-block d-sm-none d-none d-sm-block d-md-none">
-  	<img src="res/img-mobile.jpg">
+  	<img src="res/img-mobile.jpg" class="img-fluid">
+  </div>
+  <div class="">
+
   </div>
   <!-- Footer-->
-  <div class="p-3">
-  	<iframe class="" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1655.8512873793054!2d-60.56721468422768!3d-33.89731307076071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60aa72a80d21aaaa!2zSGVsYWRlcsOtYSBMaWxvwrRz!5e0!3m2!1sen!2sar!4v1554344714793!5m2!1sen!2sar" width="100%" frameborder="0" style="border:0"	></iframe>
-  </div>
+  <footer class="row">
+  	<div class="col-sm-12 col-lg-9 mt-3">
+  		ALGO
+  	</div>
+	<iframe class="col-sm-12 col-lg-3 mt-3 mb-3" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1655.8512873793054!2d-60.56721468422768!3d-33.89731307076071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60aa72a80d21aaaa!2zSGVsYWRlcsOtYSBMaWxvwrRz!5e0!3m2!1sen!2sar!4v1554344714793!5m2!1sen!2sar" width="100%" frameborder="0" style="border:0"	></iframe>
+  </footer>
 </body>
 </html>
