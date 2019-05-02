@@ -15,6 +15,19 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+	<style>
+		@media (max-width: 576px) { 
+			#footerThinco{
+				text-align: center;
+			}
+			#redesSocialesFooter{
+				text-align: center !important;
+			}
+			footer{
+				background-color: white;
+			}
+		}
+	</style>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 	  	 <!-- Titulo de inicio-->
 	    <a class="navbar-brand" href="index.html">
@@ -26,7 +39,7 @@
 	    <div class="collapse navbar-collapse " id="navbarSupportedContent">
 	  	  <ul class="navbar-nav mr-auto">
 	  	    <li class="nav-item">
-	          <a class="nav-link" href="productos.html">Productos</a>
+	          <a class="nav-link" href="indice.html">Productos</a>
 	        </li>
 	        <li class="nav-item">
 	          <a class="nav-link" href="#">Nosotros</a>
@@ -48,7 +61,7 @@
 			  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2210.313651639912!2d-60.567725328665!3d-33.89664446067544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60aa72a80d21aaaa!2zSGVsYWRlcsOtYSBMaWxvwrRz!5e0!3m2!1sen!2sar!4v1554845590808!5m2!1sen!2sar" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
-		<div class="row justify-content-around mt-2">
+		<div class="row justify-content-around mt-2 " style="margin-bottom: 90px;">
 			<div class="card col-lg-4 col-sm-12 mb-2" style="width: 18rem;">
 			  <img class="card-img-top" src="..." alt="Imagen del local">
 			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1652.5308458184743!2d-60.10624636404613!3d-34.06793278058857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2cb584e3a111ff1!2sHelader%C3%ADa+Lilo&#39;s+Arrecifes!5e0!3m2!1sen!2sar!4v1554845930718!5m2!1sen!2sar" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -59,5 +72,19 @@
 			</div>
 		</div>
 	</div>
+	
+	<footer class="container fixed-bottom p-3">
+			<div class="row">
+				<div id="footerThinco" class="col-sm-12 col-md-6 mt-3">
+					<a href="http://thinkincode.com.ar" style="text-decoration:none;">
+						<span style="font-size: 20px;">Hecho con amor por Thinco</span> <img src="res/logoThinco.png" alt="heartIco" style="width:30px;display: inline-block">
+					</a>
+				</div>
+				<div id="redesSocialesFooter" class="col-md-6 mt-3 text-right">
+					<img style="width:35px" src="res/facebook_svg.svg" alt="facebookLogo">
+					<img style="width:35px" src="res/instagram_svg.svg" alt="instaLogo">
+				</div>
+			</div>
+		</footer>
 </body>
 </html>
