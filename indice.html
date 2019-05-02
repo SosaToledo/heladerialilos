@@ -40,6 +40,20 @@
 			object-fit: cover;
 			object-position: 43% 0;
 		}
+		@media (max-width: 576px){
+			.containerAlto{
+				height: auto;
+			}
+			#footerThinco{
+				text-align: center;
+			}
+			#redesSocialesFooter{
+				text-align: center !important;
+			}
+			footer{
+				background-color: white;
+			}
+		}
 	</style>
 </head>
 
@@ -81,15 +95,14 @@
 		</div>
 	</div>
 
-	<footer class="container">
+	<footer class="container fixed-bottom p-3">
 		<div class="row">
-			<div class="col-sm-12 col-md-6 mt-3">
+			<div id="footerThinco" class="col-sm-12 col-md-6 mt-3">
 				<a href="http://thinkincode.com.ar" style="text-decoration:none;">
-					<span style="font-size: 20px;">Hecho con amor por Thinco</span> <img src="res/logoThinco.png" alt="heartIco"
-						style="width:30px;display: inline-block">
+					<span style="font-size: 20px;">Hecho con amor por Thinco</span> <img src="res/logoThinco.png" alt="heartIco" style="width:30px;display: inline-block">
 				</a>
 			</div>
-			<div class="col-md-6 mt-3 text-right">
+			<div id="redesSocialesFooter" class="col-md-6 mt-3 text-right">
 				<img style="width:35px" src="res/facebook_svg.svg" alt="facebookLogo">
 				<img style="width:35px" src="res/instagram_svg.svg" alt="instaLogo">
 			</div>

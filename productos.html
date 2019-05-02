@@ -26,33 +26,57 @@
 		.card {
 			border: none !important;
 		}
+		@media (max-width: 576px) { 
+			#footerThinco{
+				text-align: center;
+			}
+			#redesSocialesFooter{
+				text-align: center !important;
+			}
+			footer{
+				background-color: white;
+			}
+		}
 	</style>
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<!-- Titulo de inicio-->
-		<a class="navbar-brand" href="index.html">
-			<img src="res/logo-solo-verde.png" width="60" height="30" class="d-inline-block align-top" alt="">
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse " id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="indice.html">Productos</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Nosotros</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="sucursales.html">Sucursales</a>
-				</li>
-			</ul>
-		</div>
+	  	<!-- Titulo de inicio-->
+	    <a class="navbar-brand" href="index.html">
+	      <img src="res/logo-solo-verde.png" width="60" height="30" class="d-inline-block align-top" alt="">
+	    </a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+	  	  <ul class="navbar-nav mr-auto">
+	  	    <li class="nav-item">
+	          <a class="nav-link" href="productos.html">Productos</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Nosotros</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="sucursales.html">Sucursales</a>
+	        </li>
+	  	  </ul>
+	    </div>
 	</nav>
+	<!--End Nav-->
+	<div class=" mt-2 mb-5">
+		<div class="accordin" id="accordionExample">
+			<div class="card" >
+			    <div class="card-header" id="headingOne" style="background-image: url(res/portada-1.JPG);">
+			      <h2 class="mb-0">
+			        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+			          Liloletas
+			        </button>
+			      </h2>
+			    </div>
+			    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+			      <div class="card-body d-flex flex-wrap" >
+			        <div class="row justify-content-sm-center">
 	<div class="container-fluid">
 		<div class=" mt-2 mb-5">
 			<div class="card">
@@ -181,20 +205,19 @@
 
 		</div>
 
-		<footer class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-6 mt-3">
-					<a href="http://thinkincode.com.ar" style="text-decoration:none;">
-						<span style="font-size: 20px;">Hecho con amor por Thinco</span> <img src="res/logoThinco.png" alt="heartIco"
-							style="width:30px;display: inline-block">
-					</a>
-				</div>
-				<div class="col-md-6 mt-3 text-right">
-					<img style="width:35px" src="res/facebook_svg.svg" alt="facebookLogo">
-					<img style="width:35px" src="res/instagram_svg.svg" alt="instaLogo">
-				</div>
+		<footer class="container fixed-bottom p-3">
+		<div class="row">
+			<div id="footerThinco" class="col-sm-12 col-md-6 mt-3">
+				<a href="http://thinkincode.com.ar" style="text-decoration:none;">
+					<span style="font-size: 20px;">Hecho con amor por Thinco</span> <img src="res/logoThinco.png" alt="heartIco" style="width:30px;display: inline-block">
+				</a>
 			</div>
-		</footer>
+			<div id="redesSocialesFooter" class="col-md-6 mt-3 text-right">
+				<img style="width:35px" src="res/facebook_svg.svg" alt="facebookLogo">
+				<img style="width:35px" src="res/instagram_svg.svg" alt="instaLogo">
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>
