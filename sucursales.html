@@ -16,7 +16,11 @@
 </head>
 <body>
 	<style>
-		@media (max-width: 576px) { 
+		@@font-face {
+			font-family: 'AkzidenzGroteskBQSuperRegular';
+			src: local('AkzidenzGroteskBQSuperRegular')
+		}
+		@media (max-width: 576px) {
 			#footerThinco{
 				text-align: center;
 			}
@@ -26,6 +30,9 @@
 			footer{
 				background-color: white;
 			}
+		}
+		body{
+			font-family: 'AkzidenzGroteskBQSuperRegular'
 		}
 	</style>
 	<!-- Navbar-->
@@ -41,13 +48,13 @@
 			<div class="collapse navbar-collapse " id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="">Inicio</a>
+						<a class="nav-link" href="index.html">Inicio</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="indice.html">Productos</a>
+						<a class="nav-link" href="productos.html">Productos</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="productos.html#liloletas">Liloletas</a>
+						<a class="nav-link" href="liloletas.html">Liloletas</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -97,25 +104,41 @@
 			</div>
 			</div>
 	</div>
-	
+
 	<div  class="container-fluid mt-5">
-		<div class="row justify-content-around mt-5">		
+		<div class="row justify-content-around mt-5">
 			<div class="card col-lg-4 col-sm-12 mb-2" style="width: 18rem;">
-			  <img class="card-img-top" src="..." alt="Imagen del local">
+			  <div class="text-center">
+					<h4>Pergamino</h4>
+					<p>02477 44-4144</p>
+					<p></p>
+				</div>
 			  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13246.520119422386!2d-60.571714!3d-33.899181!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec85b0413fb61053!2zSGVsYWRlcsOtYSBMaWxvwrRz!5e0!3m2!1sen!2sar!4v1554845488313!5m2!1sen!2sar" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 			<div class="card col-lg-4 col-sm-12 mb-2" style="width: 18rem;">
-			  <img class="card-img-top" src="..." alt="Imagen del local">
+			  <div class="text-center">
+					<h4>Pergamino</h4>
+					<p>02477 64-3364</p>
+					<p></p>
+				</div>
 			  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2210.313651639912!2d-60.567725328665!3d-33.89664446067544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60aa72a80d21aaaa!2zSGVsYWRlcsOtYSBMaWxvwrRz!5e0!3m2!1sen!2sar!4v1554845590808!5m2!1sen!2sar" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 		<div class="row justify-content-around mt-2 " style="margin-bottom: 90px;">
 			<div class="card col-lg-4 col-sm-12 mb-2" style="width: 18rem;">
-			  <img class="card-img-top" src="..." alt="Imagen del local">
+			  <div class="text-center">
+					<h4>Arrecifes</h4>
+					<p></p>
+					<p></p>
+				</div>
 			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1652.5308458184743!2d-60.10624636404613!3d-34.06793278058857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2cb584e3a111ff1!2sHelader%C3%ADa+Lilo&#39;s+Arrecifes!5e0!3m2!1sen!2sar!4v1554845930718!5m2!1sen!2sar" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 			<div class="card col-lg-4 col-sm-12 mb-2" style="width: 18rem;">
-			  <img class="card-img-top" src="..." alt="Imagen del local">
+			  <div class="text-center">
+					<h4>San Antonio de Areco</h4>
+					<p>2326 47-1032</p>
+					<p></p>
+				</div>
 			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15687.966501052733!2d-59.481640355041755!3d-34.248832019232474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1173f9227f9c3ebd!2sHeladeria+Lilo&#39;s!5e0!3m2!1sen!2sar!4v1554845983214!5m2!1sen!2sar" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
@@ -124,9 +147,7 @@
 	<footer class="container fixed-bottom p-3">
 		<div class="row">
 			<div id="footerThinco" class="col-sm-12 col-md-6 mt-3">
-				<a href="http://thinkincode.com.ar" style="text-decoration:none;">
-					<span style="font-size: 20px;">Hecho con amor por Thinco</span> <img src="res/logoThinco.png" alt="heartIco" style="width:30px;display: inline-block">
-				</a>
+				
 			</div>
 			<div id="redesSocialesFooter" class="col-md-6 mt-3 text-right">
 				<img style="width:35px" src="res/facebook_svg.svg" alt="facebookLogo">
