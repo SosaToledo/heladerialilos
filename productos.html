@@ -26,23 +26,6 @@
 		.card {
 			border: none !important;
 		}
-
-		#productos{
-			text-align: center;
-		}
-		#cremas{
-			width: 35%;
-		}
-		#chocolates{
-			width: 60%;
-		}
-		#otros{
-			width: 100%;
-		}
-		#productos div img{
-			width:175px;
-			height: 211px;
-		}
 		@media (max-width: 576px) {
 			#footerThinco{
 				text-align: center;
@@ -52,13 +35,6 @@
 			}
 			footer{
 				background-color: white;
-			}
-			#productos>div{
-				width:100%
-			}
-			#productos>div>div>img{
-				width:165px;
-				height: 199px;
 			}
 		}
 	</style>
@@ -134,8 +110,40 @@
 			</div>
 			</div>
 	</div>
-	<div id="productos" class="">
-
+	<!-- Products -->
+	<div id="productos" class="row m-3">
+		<!-- cream -->
+		<div class="col-md-7">
+			<div class="border-bottom">
+				CREMA
+			</div>
+			<div class="">
+				<div class="row">
+					<div class="col-md-5">
+					</div>
+					<div class="col-md-7 d-flex flex-wrap">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- chocolate -->
+		<div class="col-md-5">
+			<div class="border-bottom">
+				DULCE DE LECHE
+			</div>
+		</div>
+		<!-- dulce de leche -->
+		<div class="col-md-8">
+			<div class="border-bottom">
+				DULCE DE LECHE
+			</div>
+		</div>
+		<!-- diet -->
+		<div class="col-md-4">
+			<div class="border-bottom">
+				DIET
+			</div>
+		</div>
 	</div>
 </body>
 
