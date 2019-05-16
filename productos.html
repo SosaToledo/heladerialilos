@@ -12,6 +12,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
@@ -26,13 +28,23 @@
 		.card {
 			border: none !important;
 		}
-		#imgrest div{
-			background-repeat: no-repeat;
-			background-size: contain;
+		img{
+			position: relative;
+			background-color: white;
+			z-index: 2
 		}
-		#imgrest div{
-			text-align: right;
-			text-emphasis-color: black
+		img:hover{
+			z-index: initial
+		}
+		.composicion{
+			position: absolute;
+			top: 0;
+			z-index: 1;
+			margin: 10%;
+			background-color: rgba(0, 255, 0, 0.65);
+		}
+		.composicion:hover{
+			z-index: 3;
 		}
 		@media (max-width: 576px) {
 			#footerThinco{
@@ -128,7 +140,10 @@
 			<div class="">
 				<div class="row d-flex h-100">
 					<div class="col-md-8 col-12 justify-content-center align-self-center">
-						<img class="img-fluid" id="imgimportant" src="res/ilust/1Frutillaalacremanombre.png" alt="">
+						<img class="img-fluid" src="res/ilust/1Frutillaalacremanombre.png" alt="">
+						<div class="composicion">
+							<p class="">Composicion Composicion ComposicionComposicion Composicion Composicion Composicion Composicion Composicion</p>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<div id="imgrest" class="row">
