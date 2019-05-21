@@ -28,32 +28,39 @@
 		.card {
 			border: none !important;
 		}
-		img{
+
+		img {
 			position: relative;
 			background-color: white;
 			z-index: 2
 		}
-		img:hover{
+
+		img:hover {
 			z-index: initial
 		}
-		.composicion{
+
+		.composicion {
 			position: absolute;
 			top: 0;
 			z-index: 1;
 			margin: 10%;
 			background-color: rgba(0, 255, 0, 0.65);
 		}
-		.composicion:hover{
+
+		.composicion:hover {
 			z-index: 3;
 		}
+
 		@media (max-width: 576px) {
-			#footerThinco{
+			#footerThinco {
 				text-align: center;
 			}
-			#redesSocialesFooter{
+
+			#redesSocialesFooter {
 				text-align: center !important;
 			}
-			footer{
+
+			footer {
 				background-color: white;
 			}
 		}
@@ -63,37 +70,37 @@
 <body>
 	<!-- Navbar-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<!-- Titulo de inicio-->
-			<a class="navbar-brand" href="index.html">
-				<img src="res/logo-solo-verde.png" width="60" height="30" class="d-inline-block align-top" alt="">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+		<!-- Titulo de inicio-->
+		<a class="navbar-brand" href="index.html">
+			<img src="res/logo-solo-verde.png" width="60" height="30" class="d-inline-block align-top" alt="">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="productos.html">Productos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="liloletas.html">Liloletas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="nosotros.html">Nosotros</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sucursales.html">Sucursales</a>
+				</li>
+			</ul>
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+				Carga tu CV
 			</button>
-			<div class="collapse navbar-collapse " id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Inicio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="productos.html">Productos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="liloletas.html">Liloletas</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="nosotros.html">Nosotros</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="sucursales.html">Sucursales</a>
-					</li>
-				</ul>
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-					Carga tu CV
-				</button>
-			</div>
+		</div>
 	</nav>
 	<!-- Modal -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -128,7 +135,7 @@
 					</form>
 				</div>
 			</div>
-			</div>
+		</div>
 	</div>
 	<!-- Products -->
 	<div id="productos" class="row m-3">
@@ -142,75 +149,78 @@
 					<div class="col-md-8 col-12 justify-content-center align-self-center">
 						<img class="img-fluid" src="res/ilust/1Frutillaalacremanombre.png" alt="">
 						<div class="composicion">
-							<p class="">Composicion Composicion ComposicionComposicion Composicion Composicion Composicion Composicion Composicion</p>
+							<p class="">Composicion Composicion ComposicionComposicion Composicion Composicion
+								Composicion Composicion Composicion</p>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div id="imgrest" class="row">
 							<div class="col-md-12 col-6">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacremanombre1.png" alt="">
+								<img class="img-fluid" src="res/loading.gif"
+									data-echo="res/ilust/1Frutillaalacremanombre1.png" alt="fotoHelado">
 							</div>
 							<div class="col-md-12 col-6">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacremanombre1.png" alt="">
+								<img class="img-fluid" src="res/loading.gif"
+									data-echo="res/ilust/1Frutillaalacremanombre1.png" alt="fotoHelado">
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12 col-12">
 						<div class="row">
 							<div class="col-md-4 col-6 text-center">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacremanombre1.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacremanombre1.png" alt="">
 								<h4>CHAJA</h4>
 							</div>
 							<div class="col-md-4 col-6 text-center">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacremanombre1.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacremanombre1.png" alt="">
 								<h4>Frutilla</h4>
 							</div>
 							<div class="col-md-4 col-6 text-center">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacremanombre1.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacremanombre1.png" alt="">
 								<h4>Frutilla</h4>
 							</div>
 							<div class="col-md-4 col-6 text-center">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="">
 								<h4>Frutilla</h4>
 							</div>
 							<div class="col-md-4 col-6 text-center">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="">
 								<h4>Frutilla</h4>
 							</div>
 							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="">
 								<h4>Frutilla</h4>
 							</div>
 							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="">
 								<h4>Frutilla</h4>
 							</div>
 							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="">
 								<h4>Frutilla</h4>
 							</div>
 							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="">
 								<h4>Frutilla</h4>
 							</div>
 							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="">
 								<h4>Frutilla</h4>
 							</div>
 							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="">
 								<h4>Frutilla</h4>
 							</div>
 							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="">
 								<h4>Frutilla</h4>
 							</div>
 							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="">
 								<h4>Frutilla</h4>
 							</div>
 							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+								<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="">
 								<h4>Frutilla</h4>
 							</div>
 						</div>
@@ -227,35 +237,49 @@
 					</div>
 					<div class="row">
 						<div class="col-md-8 col-12">
-							<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+							<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="FotoHelado">
 						</div>
 						<div class="col-md-4">
 							<div class="row">
 								<div class="col-md-12 col-6">
-									<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+									<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="FotoHelado">
 								</div>
 								<div class="col-md-12 col-6">
-									<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+									<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="FotoHelado">
 								</div>
 							</div>
 						</div>
 						<div class="col-md-12 col-12">
 							<div class="row">
 								<div class="col-md-4 col-6">
-									<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+									<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="FotoHelado">
 								</div>
 								<div class="col-md-4 col-6">
-									<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+									<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="FotoHelado">
 								</div>
 								<div class="col-md-4 col-6">
-									<img class="img-fluid" src="res/ilust/1Frutillaalacrema.png" alt="">
+									<img class="img-fluid" src="res/loading.gif" data-echo="res/ilust/1Frutillaalacrema.png" alt="FotoHelado">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
 		</div>
-	</div>
+
+		<script src="js/echo.js"></script>
+		<script>
+			echo.init({
+				offset: 00,
+				throttle: 250,
+				unload: false,
+				callback: function (element, op) {
+					console.log(element, 'has been', op + 'ed')
+				}
+			});
+
+  // echo.render(); is also available for non-scroll callbacks
+		</script>
 </body>
 
 </html>
