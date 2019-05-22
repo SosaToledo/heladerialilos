@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -18,42 +21,53 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 
-    <title>Nosotros - Heladería Lilos</title>
+	<title>Nosotros - Heladería Lilos</title>
 </head>
+<style>
+	@font-face {
+		font-family: 'AkzidenzGroteskBQSuperRegular';
+		src: url('res/fonts/AkzidenzGroteskBQSuperRegular.otf');
+	}
+
+	body {
+		font-family: 'AkzidenzGroteskBQSuperRegular'
+	}
+</style>
+
 <body>
 	<!-- Navbar-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light	">
-			<!-- Titulo de inicio-->
-			<a class="navbar-brand" href="index.html">
-				<img src="res/logo-solo-verde.png" width="60" height="30" class="d-inline-block align-top" alt="">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+		<!-- Titulo de inicio-->
+		<a class="navbar-brand" href="index.html">
+			<img src="res/logo-solo-verde.png" width="60" height="30" class="d-inline-block align-top" alt="">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="productos.html">Productos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="liloletas.html">Liloletas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="nosotros.html">Nosotros</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sucursales.html">Sucursales</a>
+				</li>
+			</ul>
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+				Carga tu CV
 			</button>
-			<div class="collapse navbar-collapse " id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Inicio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="productos.html">Productos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="liloletas.html">Liloletas</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="nosotros.html">Nosotros</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="sucursales.html">Sucursales</a>
-					</li>
-				</ul>
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-					Carga tu CV
-				</button>
-			</div>
+		</div>
 	</nav>
 	<!-- Modal -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -88,23 +102,34 @@
 					</form>
 				</div>
 			</div>
-			</div>
+		</div>
 	</div>
-  <div class="container-fluid row mt-5" >
-    <div class="col-md-4 col-12 offset-1 mb-3">
-      <img class="img-fluid" src="res/logo.png" alt="">
-    </div>
-    <div class="col-md-5 col-12 offset-1">
-      <p class="">
-        En el año 1987 abría en La Ciudad de pergamino heladería Lilo. El negocio lleva su nombre en honor a Angel Ratari alias “LILO”, padre de Miguel Ángel Ratari fundador de la heladería junto a su esposa Patricia Luconi, ambos fabricantes de helados.
-        Nuestro primer local se situaba en la ex avenida julio a roca 281 (actual supermercado día) largos años de mucho trabajo hicieron una marca reconocida en la zona.
-        Luego nos mudamos a avenida roca 354, un local más pequeño que nos sirvió para atravesar años difíciles del país.
-        El día 17 de diciembre del año 2001 abrimos nuestra actual casa en la calle dr alem y 11 de septiembre en la cual nos desarrollamos y afianzamos en base a nuestra calidad.
-        Actualmente contamos con otro local en la calle Rocha y Saavedra. Un espacio grande y cómodo para el disfrute de nuestros clientes.
-        El paso del tiempo y la experiencia cosechada nos permitió poder incursionar con franquicias en diferentes ciudades de la zona. Contamos con locales en la ciudad de San Antonio de Areco y en la ciudad de Arrecifes.
-        Somos una familia de trabaja día a día y persigue sus sueños exactamente igual que en sus inicios.
-      </p>
-    </div>
-  </div>
+	<!-- History -->
+	<div class="container-fluid row mt-5">
+		<div class="col-md-4 col-12 offset-1 mb-3">
+			<img class="img-fluid" src="res/logo.png" alt="">
+		</div>
+		<div class="col-md-5 col-12 offset-1">
+			<p class="">
+				En el año 1987 abría en La Ciudad de pergamino heladería Lilo. El negocio lleva su nombre en honor a Angel
+				Ratari alias “LILO”, padre de Miguel Ángel Ratari fundador de la heladería junto a su esposa Patricia Luconi,
+				ambos fabricantes de helados.
+				Nuestro primer local se situaba en la ex avenida julio a roca 281 (actual supermercado día) largos años de mucho
+				trabajo hicieron una marca reconocida en la zona.
+				Luego nos mudamos a avenida roca 354, un local más pequeño que nos sirvió para atravesar años difíciles del
+				país.
+			</p>
+			<p>
+				El día 17 de diciembre del año 2001 abrimos nuestra actual casa en la calle dr alem y 11 de septiembre en la
+				cual nos desarrollamos y afianzamos en base a nuestra calidad.
+				Actualmente contamos con otro local en la calle Rocha y Saavedra. Un espacio grande y cómodo para el disfrute de
+				nuestros clientes.
+				El paso del tiempo y la experiencia cosechada nos permitió poder incursionar con franquicias en diferentes
+				ciudades de la zona. Contamos con locales en la ciudad de San Antonio de Areco y en la ciudad de Arrecifes.
+				Somos una familia de trabaja día a día y persigue sus sueños exactamente igual que en sus inicios.
+			</p>
+		</div>
+	</div>
 </body>
+
 </html>

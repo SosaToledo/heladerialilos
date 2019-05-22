@@ -1,73 +1,86 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
-    <meta name="description" content="">
+	<meta name="description" content="">
 	<title>Sucursales - Heladeria Lilos</title>
-    <meta name="author" content="">
+	<meta name="author" content="">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 </head>
+
 <body>
 	<style>
-		@@font-face {
-			font-family: 'AkzidenzGroteskBQSuperRegular';
-			src: local('AkzidenzGroteskBQSuperRegular')
-		}
 		@media (max-width: 576px) {
-			#footerThinco{
+			#footerThinco {
 				text-align: center;
 			}
-			#redesSocialesFooter{
+
+			#redesSocialesFooter {
 				text-align: center !important;
 			}
-			footer{
+
+			footer {
 				background-color: white;
 			}
 		}
-		body{
+
+		@font-face {
+			font-family: 'AkzidenzGroteskBQSuperRegular';
+			src: url('res/fonts/AkzidenzGroteskBQSuperRegular.otf');
+		}
+
+		body {
 			font-family: 'AkzidenzGroteskBQSuperRegular'
 		}
 	</style>
 	<!-- Navbar-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light ">
-			<!-- Titulo de inicio-->
-			<a class="navbar-brand" href="index.html">
-				<img src="res/logo-solo-verde.png" width="60" height="30" class="d-inline-block align-top" alt="">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+		<!-- Titulo de inicio-->
+		<a class="navbar-brand" href="index.html">
+			<img src="res/logo-solo-verde.png" width="60" height="30" class="d-inline-block align-top" alt="">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="productos.html">Productos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="liloletas.html">Liloletas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="nosotros.html">Nosotros</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sucursales.html">Sucursales</a>
+				</li>
+			</ul>
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+				Carga tu CV
 			</button>
-			<div class="collapse navbar-collapse " id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Inicio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="productos.html">Productos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="liloletas.html">Liloletas</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="nosotros.html">Nosotros</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="sucursales.html">Sucursales</a>
-					</li>
-				</ul>
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-					Carga tu CV
-				</button>
-			</div>
+		</div>
 	</nav>
 	<!-- Modal -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -102,10 +115,11 @@
 					</form>
 				</div>
 			</div>
-			</div>
+		</div>
 	</div>
 
-	<div  class="container-fluid mt-5">
+	<!-- datos antiguos -->
+	<!-- <div  class="container-fluid mt-5">
 		<div class="row justify-content-around mt-5">
 			<div class="card col-lg-4 col-sm-12 mb-2" style="width: 18rem;">
 			  <div class="text-center">
@@ -142,12 +156,64 @@
 			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15687.966501052733!2d-59.481640355041755!3d-34.248832019232474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1173f9227f9c3ebd!2sHeladeria+Lilo&#39;s!5e0!3m2!1sen!2sar!4v1554845983214!5m2!1sen!2sar" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
+	</div> -->
+
+	<div class="row mt-3">
+		<div class="col-md-3">
+			<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+					aria-controls="v-pills-home" aria-selected="true">Pergamino 1</a>
+				<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+					aria-controls="v-pills-profile" aria-selected="false">Pergamino 2</a>
+				<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+					aria-controls="v-pills-messages" aria-selected="false">Arrecifes</a>
+				<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+					aria-controls="v-pills-settings" aria-selected="false">San Antonio de Areco</a>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="tab-content" id="v-pills-tabContent">
+				<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+					<div styles="width:1500px;height:900px;" id="map"></div>
+					<script>
+						//AIzaSyCLmT4xqKm5wOiYMhl0YQN3wgXFab-9Xq0
+						//esa es la key de la api
+
+						function initMap() {
+							var uluru = { lat: 13.710655, lng: -89.214351 };
+							var map = new google.maps.Map(document.getElementById('map'), {
+								zoom: 14,
+								center: uluru
+							});
+							var marker = new google.maps.Marker({
+								position: uluru,
+								map: map
+							});
+						}
+					</script>
+					<script async defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLmT4xqKm5wOiYMhl0YQN3wgXFab-9Xq0&callback=initMap">
+						</script>
+
+				</div>
+				<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...2</div>
+				<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...3
+				</div>
+				<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...4
+				</div>
+			</div>
+		</div>
 	</div>
+
+
+
+
+
 
 	<footer class="container fixed-bottom p-3">
 		<div class="row">
 			<div id="footerThinco" class="col-sm-12 col-md-6 mt-3">
-				
+
 			</div>
 			<div id="redesSocialesFooter" class="col-md-6 mt-3 text-right">
 				<img style="width:35px" src="res/facebook_svg.svg" alt="facebookLogo">
@@ -156,4 +222,5 @@
 		</div>
 	</footer>
 </body>
+
 </html>
