@@ -47,6 +47,11 @@
 		body {
 			font-family: 'AkzidenzGroteskBQSuperRegular'
 		}
+
+		#map .gm-style iframe+div,
+		.gmnoprint {
+			display: none !important;
+		}
 	</style>
 	<!-- Navbar-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -119,44 +124,18 @@
 	</div>
 
 	<!-- datos antiguos -->
-	<!-- <div  class="container-fluid mt-5">
-		<div class="row justify-content-around mt-5">
-			<div class="card col-lg-4 col-sm-12 mb-2" style="width: 18rem;">
-			  <div class="text-center">
-					<h4>Pergamino</h4>
-					<p>02477 44-4144</p>
-					<p></p>
-				</div>
-			  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13246.520119422386!2d-60.571714!3d-33.899181!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec85b0413fb61053!2zSGVsYWRlcsOtYSBMaWxvwrRz!5e0!3m2!1sen!2sar!4v1554845488313!5m2!1sen!2sar" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-			<div class="card col-lg-4 col-sm-12 mb-2" style="width: 18rem;">
-			  <div class="text-center">
-					<h4>Pergamino</h4>
-					<p>02477 64-3364</p>
-					<p></p>
-				</div>
-			  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2210.313651639912!2d-60.567725328665!3d-33.89664446067544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60aa72a80d21aaaa!2zSGVsYWRlcsOtYSBMaWxvwrRz!5e0!3m2!1sen!2sar!4v1554845590808!5m2!1sen!2sar" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-		</div>
-		<div class="row justify-content-around mt-2 " style="margin-bottom: 90px;">
-			<div class="card col-lg-4 col-sm-12 mb-2" style="width: 18rem;">
-			  <div class="text-center">
-					<h4>Arrecifes</h4>
-					<p></p>
-					<p></p>
-				</div>
-			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1652.5308458184743!2d-60.10624636404613!3d-34.06793278058857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2cb584e3a111ff1!2sHelader%C3%ADa+Lilo&#39;s+Arrecifes!5e0!3m2!1sen!2sar!4v1554845930718!5m2!1sen!2sar" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-			<div class="card col-lg-4 col-sm-12 mb-2" style="width: 18rem;">
-			  <div class="text-center">
-					<h4>San Antonio de Areco</h4>
-					<p>2326 47-1032</p>
-					<p></p>
-				</div>
-			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15687.966501052733!2d-59.481640355041755!3d-34.248832019232474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1173f9227f9c3ebd!2sHeladeria+Lilo&#39;s!5e0!3m2!1sen!2sar!4v1554845983214!5m2!1sen!2sar" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div> -->
+	<!-- 
+	<h4>Pergamino</h4>
+	<p>02477 44-4144</p>
+
+	<h4>Pergamino</h4>
+	<p>02477 64-3364</p>
+
+	<h4>Arrecifes</h4>
+
+	<h4>San Antonio de Areco</h4>
+	<p>2326 47-1032</p>
+ 	-->
 
 	<div class="row mt-3">
 		<div class="col-md-3">
@@ -174,22 +153,66 @@
 		<div class="col-md-9">
 			<div class="tab-content" id="v-pills-tabContent">
 				<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-					<div styles="width:1500px;height:900px;" id="map"></div>
+					<div id="map" style="width: 850px; height: 400px"></div>
 					<script>
 						//AIzaSyCLmT4xqKm5wOiYMhl0YQN3wgXFab-9Xq0
 						//esa es la key de la api
 
 						function initMap() {
-							var uluru = { lat: 13.710655, lng: -89.214351 };
+							var uluru = { lat: -33.896800, lng: -60.566600 };
 							var map = new google.maps.Map(document.getElementById('map'), {
-								zoom: 14,
-								center: uluru
+								zoom: 19,
+								center: uluru,
+								streetViewControl: false,
+								disableDefaultUI: true,
+								mapTypeId: google.maps.MapTypeId.ROADMAP
 							});
+
+							var request = {
+								location: map.getCenter(),
+								radius: '500',
+								query: 'Heladeria Lilos'
+							};
+							var service = new google.maps.places.PlacesService(map);
+							service.textSearch(request, callback);
+
+							var myCity = new google.maps.Circle({
+								center: uluru,
+								strokeColor: "#0080FF",
+								strokeOpacity: 0.8,
+								strokeWeight: 2,
+								fillColor: "#0080FF",
+								fillOpacity: 0.4,
+								editable: false
+							});
+							myCity.setMap(map);
+
 							var marker = new google.maps.Marker({
 								position: uluru,
 								map: map
 							});
+							marker.setMap(map);
+
+							var infowindow = new google.maps.InfoWindow({
+								content: "Lilos Pergamino 1"
+							});
+
+							infowindow.open(map, marker);
+							google.maps.event.addDomListener(window, 'load', initialize);
 						}
+						
+						function callback(results, status) {
+							if (status == google.maps.places.PlacesServiceStatus.OK) {
+								var marker = new google.maps.Marker({
+									map: map,
+									place: {
+										placeId: results[0].place_id,
+										location: results[0].geometry.location
+									}
+								});
+							}
+						}
+
 					</script>
 					<script async defer
 						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLmT4xqKm5wOiYMhl0YQN3wgXFab-9Xq0&callback=initMap">
