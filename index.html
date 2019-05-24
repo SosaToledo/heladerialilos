@@ -21,6 +21,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <style>
 	@font-face {
@@ -30,6 +32,22 @@
 
 	body {
 		font-family: 'AkzidenzGroteskBQSuperRegular'
+	}
+
+	.iconofb {
+		color: hsla(221, 44%, 41%, 0.5);
+	}
+
+	.iconoinsta {
+		color: rgba(225, 48, 108, 0.5);
+	}
+
+	.iconofb:hover {
+		color: hsla(221, 60%, 50%, 1);
+	}
+
+	.iconoinsta:hover {
+		color: rgba(225, 48, 108, 1);
 	}
 </style>
 
@@ -63,9 +81,15 @@
 				</li>
 			</ul>
 			<!-- Button trigger modal -->
-			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+			<!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
 				Carga tu CV
-			</button>
+			</button> -->
+			<a class="m-1" href="https://www.facebook.com/heladeria.lilos"><i style="font-size:20pt;"
+					class="iconofb fa fa-facebook-square"></i>
+			</a>
+			<a class="m-1 mr-5" href="https://www.instagram.com/lilos.artesanal/?hl=es"><i style="font-size:20pt;"
+					class="iconoinsta fa fa-instagram"></i>
+			</a>
 		</div>
 	</nav>
 	<!-- Modal -->

@@ -21,6 +21,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -49,8 +50,63 @@
 		}
 
 		#map .gm-style iframe+div,
-		.gmnoprint {
+		.gmnoprint,
+		.gm-style-cc {
 			display: none !important;
+		}
+
+		.img-sucursal {
+			border-radius: 10px;
+			margin: auto;
+			max-width: 50%;
+			display: block;
+		}
+
+		.nav.nav-pills .nav-link.active {
+			background-color: white;
+			color: #28a745;
+		}
+
+		.nav.nav-pills .nav-link {
+			color: grey;
+		}
+
+		.tab-content h4 a {
+			color: gray;
+			text-decoration: none;
+		}
+
+		.tab-content h4 a:hover {
+			color: rgba(40, 167, 69, 1);
+		}
+
+
+		.tab-content h4 a:hover .iconofb {
+			color: hsla(221, 44%, 41%, 1);
+		}
+
+		.iconofb {
+			color: hsla(221, 44%, 41%, 0.5);
+		}
+
+		.iconoinsta {
+			color: rgba(225, 48, 108, 0.5);
+		}
+
+		.iconofb:hover {
+			color: hsla(221, 60%, 50%, 1);
+		}
+
+		.iconoinsta:hover {
+			color: rgba(225, 48, 108, 1);
+		}
+
+		.tab-content h4 a:hover .iconoinsta {
+			color: rgba(225, 48, 108, 1);
+		}
+
+		.contenedor-sucursales {
+			max-width: 80%;
 		}
 	</style>
 	<!-- Navbar-->
@@ -82,9 +138,16 @@
 				</li>
 			</ul>
 			<!-- Button trigger modal -->
-			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+			<!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
 				Carga tu CV
-			</button>
+			</button> -->
+
+			<a class="m-1" href="https://www.facebook.com/heladeria.lilos"><i style="font-size:20pt;"
+					class="iconofb fa fa-facebook-square"></i>
+			</a>
+			<a class="m-1 mr-5" href="https://www.instagram.com/lilos.artesanal/?hl=es"><i style="font-size:20pt;"
+					class="iconoinsta fa fa-instagram"></i>
+			</a>
 		</div>
 	</nav>
 	<!-- Modal -->
@@ -123,106 +186,133 @@
 		</div>
 	</div>
 
-	<!-- datos antiguos -->
-	<!-- 
-	<h4>Pergamino</h4>
-	<p>02477 44-4144</p>
+	<div class="container-fluid contenedor-sucursales">
 
-	<h4>Pergamino</h4>
-	<p>02477 64-3364</p>
+		<div class="row mt-3">
+			<div class="col-md-3">
+				<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+					<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+						aria-controls="v-pills-home" aria-selected="true">
+						<i class="fa fa-map-marker"></i>
+						Av.Rocha 693 <br>
+						<i class="fa fa-phone-square"></i>
+						02477 64-3364</a>
+					<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+						aria-controls="v-pills-profile" aria-selected="false">
+						<i class="fa fa-map-marker"></i>
+						Dr.Alem y 11 de septiembre <br>
+						<i class="fa fa-phone-square"></i>
+						02477 - 444144</a>
+					<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+						aria-controls="v-pills-messages" aria-selected="false">
+						<i class="fa fa-map-marker"></i>
+						Arrecifes - Dr. Carlos Merlassino 699
 
-	<h4>Arrecifes</h4>
-
-	<h4>San Antonio de Areco</h4>
-	<p>2326 47-1032</p>
- 	-->
-
-	<div class="row mt-3">
-		<div class="col-md-3">
-			<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-				<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-					aria-controls="v-pills-home" aria-selected="true">Pergamino 1</a>
-				<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-					aria-controls="v-pills-profile" aria-selected="false">Pergamino 2</a>
-				<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-					aria-controls="v-pills-messages" aria-selected="false">Arrecifes</a>
-				<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-					aria-controls="v-pills-settings" aria-selected="false">San Antonio de Areco</a>
+					</a>
+					<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+						aria-controls="v-pills-settings" aria-selected="false">
+						<i class="fa fa-map-marker"></i>
+						San Antonio de Areco - Irigoyen 452
+						<br>
+						<i class="fa fa-phone-square"></i>
+						02326 47-1032
+					</a>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-9">
-			<div class="tab-content" id="v-pills-tabContent">
-				<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-					<div id="map" style="width: 850px; height: 400px"></div>
-					<script>
-						//AIzaSyCLmT4xqKm5wOiYMhl0YQN3wgXFab-9Xq0
-						//esa es la key de la api
+			<div class="col-md-9">
+				<div class="tab-content" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+						aria-labelledby="v-pills-home-tab">
+						<div class="row">
+							<div class="col-md-5">
+								<img class="img-sucursal mt-5" src="res/sucursalRocha.JPG" alt="Sucursal de Rocha">
+								<h4 class="text-center mt-3">
+									Av Rocha 693 <br>
+									02477 64-3364 <br>
+									<a href="https://www.facebook.com/heladeria.lilos"><i
+											class="iconofb fa fa-facebook-square"></i>
+										Heladeria Lilos</a> <br>
+									<a href="https://www.instagram.com/lilos.artesanal/?hl=es"><i
+											class="iconoinsta fa fa-instagram"></i>
+										@Lilos.Artesanal</a>
+								</h4>
+							</div>
+							<div class="col-md-7">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206.98247379130376!2d-60.56661727137667!3d-33.89687517957814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b9b544ce20245b%3A0x60aa72a80d21aaaa!2zSGVsYWRlcsOtYSBMaWxvwrRz!5e0!3m2!1ses-419!2sar!4v1558660474562!5m2!1ses-419!2sar"
+									width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+						aria-labelledby="v-pills-profile-tab">
+						<div class="row">
+							<div class="col-md-5">
+								<img class="img-sucursal mt-5" src="res/sucursalAlem.jpg" alt="Sucursal de Rocha">
+								<h4 class="text-center mt-3">
+									Dr.Alem y 11 de septiembre <br>
+									02477 444144 <br>
+									<a href="https://www.facebook.com/heladeria.lilos"><i
+											class="iconofb fa fa-facebook-square"></i>
+										Heladeria Lilos</a> <br>
+									<a href="https://www.instagram.com/lilos.artesanal/?hl=es"><i
+											class="iconoinsta fa fa-instagram"></i>
+										@Lilos.Artesanal</a>
+								</h4>
+							</div>
+							<div class="col-md-7">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d206.97691992305866!2d-60.5717038733131!3d-33.899163261876446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec85b0413fb61053!2zSGVsYWRlcsOtYSBMaWxvwrRz!5e0!3m2!1ses-419!2sar!4v1558659807922!5m2!1ses-419!2sar"
+									width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
 
-						function initMap() {
-							var uluru = { lat: -33.896800, lng: -60.566600 };
-							var map = new google.maps.Map(document.getElementById('map'), {
-								zoom: 19,
-								center: uluru,
-								streetViewControl: false,
-								disableDefaultUI: true,
-								mapTypeId: google.maps.MapTypeId.ROADMAP
-							});
-
-							var request = {
-								location: map.getCenter(),
-								radius: '500',
-								query: 'Heladeria Lilos'
-							};
-							var service = new google.maps.places.PlacesService(map);
-							service.textSearch(request, callback);
-
-							var myCity = new google.maps.Circle({
-								center: uluru,
-								strokeColor: "#0080FF",
-								strokeOpacity: 0.8,
-								strokeWeight: 2,
-								fillColor: "#0080FF",
-								fillOpacity: 0.4,
-								editable: false
-							});
-							myCity.setMap(map);
-
-							var marker = new google.maps.Marker({
-								position: uluru,
-								map: map
-							});
-							marker.setMap(map);
-
-							var infowindow = new google.maps.InfoWindow({
-								content: "Lilos Pergamino 1"
-							});
-
-							infowindow.open(map, marker);
-							google.maps.event.addDomListener(window, 'load', initialize);
-						}
-						
-						function callback(results, status) {
-							if (status == google.maps.places.PlacesServiceStatus.OK) {
-								var marker = new google.maps.Marker({
-									map: map,
-									place: {
-										placeId: results[0].place_id,
-										location: results[0].geometry.location
-									}
-								});
-							}
-						}
-
-					</script>
-					<script async defer
-						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLmT4xqKm5wOiYMhl0YQN3wgXFab-9Xq0&callback=initMap">
-						</script>
-
-				</div>
-				<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...2</div>
-				<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...3
-				</div>
-				<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...4
+					</div>
+					<div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+						aria-labelledby="v-pills-messages-tab">
+						<div class="row">
+							<div class="col-md-5">
+								<img class="img-sucursal mt-5" src="res/sucursalArrecifes.jpg" alt="Sucursal de Rocha">
+								<h4 class="text-center mt-3">
+									Arrecifes - Dr. Carlos Merlassino 699 <br>
+									<a href="https://www.facebook.com/lilos.arrecifes.9"><i
+											class="iconofb fa fa-facebook-square"></i>
+										Lilos Arrecifes</a> <br>
+									<a href="https://www.instagram.com/lilosarrecifes/?hl=es"><i
+											class="iconoinsta fa fa-instagram"></i>
+										@LilosArrecifes</a>
+								</h4>
+							</div>
+							<div class="col-md-7">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.2652899181771!2d-60.10552568978786!3d-34.06794641786978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b99d32a1349875%3A0xe2cb584e3a111ff1!2sHelader%C3%ADa+Lilo&#39;s+Arrecifes!5e0!3m2!1ses-419!2sar!4v1558660982492!5m2!1ses-419!2sar"
+									width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+						aria-labelledby="v-pills-settings-tab">
+						<div class="row">
+							<div class="col-md-5">
+								<img class="img-sucursal mt-5" src="res/sucursalSada.jpg" alt="Sucursal de Rocha">
+								<h4 class="text-center mt-3">
+									San Antonio de Areco - Irigoyen 452 <br>
+									02326 47-1032 <br>
+									<a href="https://www.facebook.com/heladeria.lilossada.9"><i
+											class="iconofb fa fa-facebook-square"></i>
+										Heladeria Lilos Sada</a> <br>
+									<a href="https://www.instagram.com/helados_lilos/?hl=es"><i
+											class="iconoinsta fa fa-instagram"></i>
+										@Helados_Lilos</a>
+								</h4>
+							</div>
+							<div class="col-md-7">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d412.2384264431042!2d-59.46953873828282!3d-34.25090613538623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb95528bd647bd%3A0x1173f9227f9c3ebd!2sHeladeria+Lilo&#39;s!5e0!3m2!1ses-419!2sar!4v1558661628845!5m2!1ses-419!2sar"
+									width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
