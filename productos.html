@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="">
@@ -30,8 +29,13 @@
 			font-family: 'AkzidenzGroteskBQSuperRegular';
 			src: url('res/fonts/AkzidenzGroteskBQSuperRegular.otf');
 		}
-
-		body {
+		#productos{
+			text-align: center;
+		}
+		#productos div{
+			margin-top: 1%;
+		}
+		nav {
 			font-family: 'AkzidenzGroteskBQSuperRegular'
 		}
 
@@ -59,8 +63,9 @@
 			top: 20%;
 			z-index: 1;
 			margin: 10%;
-			background-color: rgba(0, 0, 0, 0.15);
+			background-color: rgba(0, 0, 0, 0.35);
 			text-align: center;
+			color: white;
 		}
 
 		.composicion:hover {
@@ -98,7 +103,6 @@
 		}
 	</style>
 </head>
-
 <body>
 	<!-- Navbar-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -140,6 +144,7 @@
 			</a>
 		</div>
 	</nav>
+
 	<!-- Modal -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 		aria-hidden="true">
@@ -175,99 +180,183 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- Products -->
 	<div id="productos" class="row m-3">
-		<!-- cremas -->
-		<div class="col-md-6">
-			<div class="border-bottom">
+		<!-- cremas y diet -->
+		<div class="col-md-6 mt-3">
+			<!-- cremas -->
+			<div class="col-md-12">
+				<div class="border-bottom">
 				CREMAS
-			</div>
-			<div class="">
-				<div class="row d-flex h-100">
-					<!--Sambayón-->
-					<div class="col-md-8 col-12 justify-content-center align-self-center">
-						<img class="img-fluid pr-5 pl-5 mr-3"  src="res/loading.gif" data-echo="res/ilust/cremas/3Americana.png" alt="">
-						<div class="composicion">
-							<p class="">
-								Crema americana con dulce de leche natural y trozos de brownies
-							</p>
+				</div>
+				<div class="">
+					<div class="row d-flex h-100">
+						<!--Sambayón-->
+						<div class="col-md-8 col-12 justify-content-center align-self-center">
+							<img class="img-fluid pr-5 pl-5 mr-3"  src="res/loading.gif" 
+								data-echo="res/ilust/cremas/3Americana.png" alt="">
+							<div class="composicion">
+								<p class="">
+									Crema americana con dulce de leche natural y trozos de brownies
+								</p>
+							</div>
 						</div>
-					</div>
-					<!--Americana y Chajá-->
-					<div class="col-md-4">
-						<div id="imgrest" class="row">
-							<div class="col-md-12 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/2Chaja.png" alt="fotoHelado">
-								<div class="composicion">
-									<p class="">
-										De la ciudad de Paysandú, Uruguay, una crema americana con durazno y merengue
-									</p>
+						<!--Americana y Chajá-->
+						<div class="col-md-4">
+							<div id="imgrest" class="row">
+								<div class="col-md-12 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/2Chaja.png" alt="fotoHelado">
+									<div class="composicion">
+										<p class="">
+											De la ciudad de Paysandú, Uruguay, una crema americana con durazno y merengue
+										</p>
+									</div>
+								</div>
+								<div class="col-md-12 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/3Americana.png" alt="fotoHelado">
+									<div class="composicion">
+										<p class="">
+											La tradicional receta con azucar y leche
+										</p>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-12 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/3Americana.png" alt="fotoHelado">
+						</div>
+						<div class="col-md-12 col-12">
+							<div class="row">
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/5Granizado.png" alt="">
+									<div class="composicion">
+										<p>
+											Crema americana con trozos de chocolate
+										</p>
+									</div>
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+									<div class="composicion">
+										<p>
+											Delicioso flan con dulce de leche natural y caramelo	
+										</p>
+									</div>
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/23Tramontana.png" alt="">
+									<div class="composicion">
+										<p>
+											Crema de vainilla con dulce de leche natural y oreos en trozos
+										</p>
+									</div>
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/26Sopainglesa.png" alt="">
+									<div class="composicion">
+										<p>
+											Crema de vainillas con masitas vainillas embebidas en vino oporto y café
+										</p>
+									</div>
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/29Donpedro.png" alt="">
+									<div class="composicion">
+										<p>
+											Crema de intenso sabor a whisky y nueces
+										</p>
+									</div>
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/31Vainilla.png" alt="">
+									<div class="composicion">
+										<p>
+											Una deliciosa mezcla de crema, azúcar y vainilla
+										</p>
+									</div>
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/32Tiramisú.png" alt="">
+									<div class="composicion">
+										<p>
+											Antigua receta italiana a base de café, vainillas embebidas en oporto y cacao
+										</p>
+									</div>
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/44Mantecol.png" alt="">
+									<div class="composicion">
+										<p>
+											Crema mantecol con trozos del mismo
+										</p>
+									</div>
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-12 col-12">
-						<div class="row">
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+				</div>
+			</div>
+			<!-- diet -->
+			<div class="col-md-12">
+				<div class="border-bottom">
+					DIET
+				</div>
+				<div class="">
+					<div class="row d-flex h-100">
+						<div class="col-md-12">
+							<div id="imgrest" class="row">
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/2Chaja.png" alt="fotoHelado">
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/3Americana.png" alt="fotoHelado">
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+								</div>
+								<div class="col-md-4 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -275,7 +364,7 @@
 			</div>
 		</div>
 		<!--frutas a la crema Y dulce de leche-->
-		<div class="col-md-6">
+		<div class="col-md-6 mt-3">
 			<!--frutas a la crema-->
 			<div class="col-md-12">
 				<div class="border-bottom">
@@ -288,21 +377,30 @@
 							<img class="img-fluid pr-5 pl-5 mr-3"  src="res/loading.gif" data-echo="res/ilust/frutasalacrema/1Frutillaalacrema.png" alt="">
 							<div class="composicion">
 								<p class="">
-									Composicion Composicion ComposicionComposicion Composicion Composicion
-									Composicion Composicion Composicion
+									Crema de frutilla con frutillas naturales algo algo algo algo algo algo
 								</p>
 							</div>
 						</div>
-						<!--Americana y Chajá-->
+						<!--Frambuesa y Banana carioca-->
 						<div class="col-md-4">
 							<div id="imgrest" class="row">
 								<div class="col-md-12 col-6">
 									<img class="img-fluid" src="res/loading.gif"
 										data-echo="res/ilust/frutasalacrema/7Frambuesa.png" alt="fotoHelado">
+									<div class="composicion">
+										<p>
+											Helado a base del llamativo frutos rojo
+										</p>
+									</div>
 								</div>
 								<div class="col-md-12 col-6">
 									<img class="img-fluid" src="res/loading.gif"
 										data-echo="res/ilust/frutasalacrema/8Bananacarioca.png" alt="fotoHelado">
+									<div class="composicion">
+										<p>
+											Cremoso helado de banana con dulce de leche natural 
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -310,35 +408,75 @@
 							<div class="row">
 								<div class="col-md-4 col-6">
 									<img class="img-fluid" src="res/loading.gif"
-										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+										data-echo="res/ilust/frutasalacrema/12Mascarponeconfrutosrojos.png" alt="">
+									<div class="composicion">
+										<p>
+											Crema a base de queso mascarpone y frutos rojos patagónicos
+										</p>
+									</div>
 								</div>
 								<div class="col-md-4 col-6">
 									<img class="img-fluid" src="res/loading.gif"
-										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+										data-echo="res/ilust/frutasalacrema/24Frutosdelbosque.png" alt="">
+									<div class="composicion">
+										<p>
+											Crema americana con frutos rojos patagónicos
+										</p>
+									</div>
 								</div>
 								<div class="col-md-4 col-6">
 									<img class="img-fluid" src="res/loading.gif"
-										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+										data-echo="res/ilust/frutasalacrema/27Cereza.png" alt="">
+									<div class="composicion">
+										<p>
+											Helado con trozos de cerezas
+										</p>
+									</div>
 								</div>
 								<div class="col-md-4 col-6">
 									<img class="img-fluid" src="res/loading.gif"
-										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+										data-echo="res/ilust/frutasalacrema/33Quinotoalwisky.png" alt="">
+									<div class="composicion">
+										<p>
+											Crema de vainilla con quinotos embebidos en whisky
+										</p>
+									</div>
 								</div>
 								<div class="col-md-4 col-6">
 									<img class="img-fluid" src="res/loading.gif"
-										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+										data-echo="res/ilust/frutasalacrema/34Mentagranizada.png" alt="">
+									<div class="composicion">
+										<p>
+											Crema de menta con trozos de chocolates
+										</p>
+									</div>
 								</div>
 								<div class="col-md-4 col-6">
 									<img class="img-fluid" src="res/loading.gif"
-										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+										data-echo="res/ilust/frutasalacrema/42Lemonpie.png" alt="">
+									<div class="composicion">
+										<p>
+											Crema de limon con masitas rellenas de limon
+										</p>
+									</div>
 								</div>
 								<div class="col-md-4 col-6">
 									<img class="img-fluid" src="res/loading.gif"
-										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+										data-echo="res/ilust/frutasalacrema/27Cereza.png" alt="">
+									<div class="composicion">
+										<p>
+											Helado con trozos de cerezas
+										</p>
+									</div>
 								</div>
 								<div class="col-md-4 col-6">
 									<img class="img-fluid" src="res/loading.gif"
-										data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+										data-echo="res/ilust/frutasalacrema/27Cereza.png" alt="">
+									<div class="composicion">
+										<p>
+											Helado con trozos de cerezas
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -354,24 +492,34 @@
 						<div class="row d-flex h-100">
 							<!-- del campo-->
 							<div class="col-md-8 col-12 justify-content-center align-self-center">
-								<img class="img-fluid pr-5 pl-5 mr-3"  src="res/loading.gif" data-echo="res/ilust/frutasalacrema/1Frutillaalacrema.png" alt="">
+								<img class="img-fluid pr-5 pl-5 mr-3"  src="res/loading.gif" 
+									data-echo="res/ilust/dulcedeleche/20Dulcedecampo.png" alt="">
 								<div class="composicion">
 									<p class="">
-										Composicion Composicion ComposicionComposicion Composicion Composicion
-										Composicion Composicion Composicion
+										Cremosa receta casera 	
 									</p>
 								</div>
 							</div>
-							<!--Americana y Chajá-->
+							<!--colonial y havanna-->
 							<div class="col-md-4">
 								<div id="imgrest" class="row">
 									<div class="col-md-12 col-6">
 										<img class="img-fluid" src="res/loading.gif"
-											data-echo="res/ilust/frutasalacrema/7Frambuesa.png" alt="fotoHelado">
+											data-echo="res/ilust/dulcedeleche/4Colonial.png" alt="fotoHelado">
+											<div>
+												<p>
+
+												</p>
+											</div>
 									</div>
 									<div class="col-md-12 col-6">
 										<img class="img-fluid" src="res/loading.gif"
-											data-echo="res/ilust/frutasalacrema/8Bananacarioca.png" alt="fotoHelado">
+											data-echo="res/ilust/dulcedeleche/8Havanna.png" alt="fotoHelado">
+											<div class="composicion">
+												<p>
+													Reseta original con sabro al famoso alfajor marplatense
+												</p>
+											</div>
 									</div>
 								</div>
 							</div>
@@ -379,15 +527,41 @@
 								<div class="row">
 									<div class="col-md-4 col-6">
 										<img class="img-fluid" src="res/loading.gif"
-											data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+											data-echo="res/ilust/dulcedeleche/10Dulcedelechegranizado.png" alt="">
+											<div class="composicion">
+												<p>
+													El rico sabor del dulce de leche con trozos de chocolates
+												</p>
+											</div>
 									</div>
 									<div class="col-md-4 col-6">
 										<img class="img-fluid" src="res/loading.gif"
-											data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+											data-echo="res/ilust/dulcedeleche/22Cococondulceleche.png" alt="">
+											<div class="composicion">
+												<p>
+													Dulce de leche con el toque de sabro a coco.
+												</p>
+											</div>
+										
 									</div>
 									<div class="col-md-4 col-6">
 										<img class="img-fluid" src="res/loading.gif"
-											data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+											data-echo="res/ilust/dulcedeleche/30Dulcedelecheconnuez.png" alt="">
+											<div class="composicion">
+												<p>
+													trozos de nuez para darle un toque crocante
+												</p>
+											</div>
+										
+									</div>
+									<div class="col-md-4 col-6">
+											<img class="img-fluid" src="res/loading.gif"
+												data-echo="res/ilust/dulcedeleche/6Dolcatta.png" alt="">
+											<div class="composicion">
+												<p>
+													Helado de dulce de leche con trozos de bon o bon y Dulce de leche natural.
+												</p>
+											</div>
 									</div>
 								</div>
 							</div>
@@ -396,141 +570,124 @@
 			</div>
 		</div>
 		<!--Chocolates-->
-		<div class="col-md-12">
+		<div class="col-md-12 mt-3">
 			<div class="border-bottom">
 				CHOCOLATES
 			</div>
 			<div class="">
 				<div class="row">
 						<div class="col-md-4 col-12 justify-content-center align-self-center">
-								<img class="img-fluid pr-5 pl-5 mr-3"  src="res/loading.gif" data-echo="res/ilust/cremas/3Americana.png" alt="">
+								<img class="img-fluid pr-5 pl-5 mr-3"  src="res/loading.gif" 
+									data-echo="res/ilust/chocolates/15Chocolate.png" alt="">
 								<div class="composicion">
 									<p class="">
-										Composicion Composicion ComposicionComposicion Composicion Composicion
-										Composicion Composicion Composicion
-									</p>
+
+									</p>	
 								</div>
-							</div>
-							<!--Americana y Chajá-->
-							<div class="col-md-8">
-								<div id="imgrest" class="row">
-									<div class="col-md-3 col-6">
-										<img class="img-fluid" src="res/loading.gif"
-											data-echo="res/ilust/cremas/2Chaja.png" alt="fotoHelado">
-									</div>
-									<div class="col-md-3 col-6">
-										<img class="img-fluid" src="res/loading.gif"
-											data-echo="res/ilust/cremas/3Americana.png" alt="fotoHelado">
-									</div>
-									<div class="col-md-3 col-6">
-										<img class="img-fluid" src="res/loading.gif"
-											data-echo="res/ilust/cremas/2Chaja.png" alt="fotoHelado">
-									</div>
-									<div class="col-md-3 col-6">
-										<img class="img-fluid" src="res/loading.gif"
-											data-echo="res/ilust/cremas/3Americana.png" alt="fotoHelado">
-									</div>
-									<div class="col-md-3 col-6">
-										<img class="img-fluid" src="res/loading.gif"
-											data-echo="res/ilust/cremas/2Chaja.png" alt="fotoHelado">
-									</div>
-									<div class="col-md-3 col-6">
-										<img class="img-fluid" src="res/loading.gif"
-											data-echo="res/ilust/cremas/3Americana.png" alt="fotoHelado">
+						</div>
+						<div class="col-md-8">
+							<div id="imgrest" class="row">
+								<div class="col-md-3 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/chocolates/16Chocolateamargo.png" alt="fotoHelado">
+									<div class="composicion">
+										<p>
+
+										</p>
 									</div>
 								</div>
+								<div class="col-md-3 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/chocolates/17Chocolatetentacion.png" alt="fotoHelado">
+									<div class="composicion">
+										<p>
+											Chocolate con dulce de leche natural y trozos de chocolates
+										</p>
+									</div>
+								</div>
+								<div class="col-md-3 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/chocolates/18Selvanegra.png" alt="fotoHelado">
+									<div class="composicion">
+										<p>
+											Chocolate con merengue y cerezas
+										</p>
+									</div>
+								</div>
+								<div class="col-md-3 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/chocolates/19Superchocolate.png" alt="fotoHelado">
+									<div class="composicion">
+										<p>
+											Chocolate con nueces y almendras
+										</p>
+									</div>
+								</div>
+								<div class="col-md-3 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/chocolates/21Chocolateconpasas.png" alt="fotoHelado">
+									<div class="composicion">
+										<p>
+											Chocolate con pasas embebidas en rhum
+										</p>
+									</div>
+								</div>
+								<div class="col-md-3 col-6">
+									<img class="img-fluid" src="res/loading.gif"
+										data-echo="res/ilust/chocolates/43Chocolateblancogranizado.png" alt="fotoHelado">
+									<div class="composicion">
+										<p>
+
+										</p>
+									</div>
+								</div>
 							</div>
+						</div>
 				</div>
 			</div>
 		</div>
 		<!--frutas naturales-->
-		<div class="col-md-6">
+		<div class="col-md-12 mt-3">
 			<div class="border-bottom">
 					FRUTAS NATURALES
 			</div>
 			<div class="">
 				<div class="row d-flex h-100">
 					<!--Sambayón-->
-					<div class="col-md-8 col-12 justify-content-center align-self-center">
-						<img class="img-fluid pr-5 pl-5 mr-3"  src="res/loading.gif" data-echo="res/ilust/cremas/3Americana.png" alt="">
+					<div class="col-md-4 col-12 justify-content-center align-self-center">
+						<img class="img-fluid pr-5 pl-5 mr-3"  src="res/loading.gif" 
+							data-echo="res/ilust/frutasnaturales/28Limon.png" alt="">
 						<div class="composicion">
 							<p class="">
-								Composicion Composicion ComposicionComposicion Composicion Composicion
-								Composicion Composicion Composicion
+								
 							</p>
 						</div>
 					</div>
 					<!--Americana y Chajá-->
-					<div class="col-md-4">
+					<div class="col-md-8">
 						<div id="imgrest" class="row">
-							<div class="col-md-12 col-6">
+							<div class="col-md-3 col-6">
 								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/2Chaja.png" alt="fotoHelado">
+									data-echo="res/ilust/frutasnaturales/35Frutilla.png" alt="fotoHelado">
 							</div>
-							<div class="col-md-12 col-6">
+							<div class="col-md-3 col-6">
 								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/3Americana.png" alt="fotoHelado">
+									data-echo="res/ilust/frutasnaturales/36Durazno.png" alt="fotoHelado">
 							</div>
-						</div>
-					</div>
-					<div class="col-md-12 col-12">
-						<div class="row">
-							<div class="col-md-4 col-6">
+							<div class="col-md-3 col-6">
 								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+									data-echo="res/ilust/frutasnaturales/39Lemonfrut.png" alt="">
+								<div class="composicion">
+									Helado de limon con trozos de frutilla
+								</div>
 							</div>
-							<div class="col-md-4 col-6">
+							<div class="col-md-3 col-6">
 								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+									data-echo="res/ilust/frutasnaturales/45Maracuya.png" alt="">
 							</div>
-							<div class="col-md-4 col-6">
+							<div class="col-md-3 col-6">
 								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--diet-->
-		<div class="col-md-6">
-			<div class="border-bottom">
-				DIET
-			</div>
-			<div class="">
-				<div class="row d-flex h-100">
-					<!--Sambayón-->
-					<div class="col-md-8 col-12 justify-content-center align-self-center">
-						<img class="img-fluid pr-5 pl-5 mr-3"  src="res/loading.gif" data-echo="res/ilust/cremas/3Americana.png" alt="">
-						<div class="composicion">
-							<p class="">
-								Composicion Composicion ComposicionComposicion Composicion Composicion
-								Composicion Composicion Composicion
-							</p>
-						</div>
-					</div>
-					<!--Americana y Chajá-->
-					<div class="col-md-4">
-						<div id="imgrest" class="row">
-							<div class="col-md-12 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/2Chaja.png" alt="fotoHelado">
-							</div>
-							<div class="col-md-12 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/3Americana.png" alt="fotoHelado">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-12 col-12">
-						<div class="row">
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
-							</div>
-							<div class="col-md-4 col-6">
-								<img class="img-fluid" src="res/loading.gif"
-									data-echo="res/ilust/cremas/11Cremaflan.png" alt="">
+									data-echo="res/ilust/frutasnaturales/46Anana.png" alt="">
 							</div>
 						</div>
 					</div>
