@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>LILOLETAS - Heladeria Lilos</title>
-	<meta name="author" content="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Postres - Lilos heladería</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -23,40 +23,67 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-	<style>
-		div img {
-			height: 300px;
-		}
-
+  <style>
 		@font-face {
 			font-family: 'AkzidenzGroteskBQSuperRegular';
 			src: url('res/fonts/AkzidenzGroteskBQSuperRegular.otf');
 		}
-
-		nav {
+		nav, p{
 			font-family: 'AkzidenzGroteskBQSuperRegular'
 		}
-
+		p{
+			font-size: 1.5em;
+		}
+	
 		.iconofb {
 			color: hsla(221, 44%, 41%, 0.5);
 		}
-
+	
 		.iconoinsta {
 			color: rgba(225, 48, 108, 0.5);
 		}
-
+	
 		.iconofb:hover {
 			color: hsla(221, 60%, 50%, 1);
 		}
-
+	
 		.iconoinsta:hover {
 			color: rgba(225, 48, 108, 1);
 		}
+		div img:hover{
+			background-color: rgba(92, 221, 75, 0.733);
+			border-radius: 20px;
+		}
+		@media (max-width: 576px){
+			
+		}
+
+		img {
+			position: relative;
+			background-color: white;
+			z-index: 2
+		}
+
+		img:hover {
+			z-index: initial
+		}
+
+		.composicion {
+			position: absolute;
+			z-index: 1;
+			background-color: rgba(0, 0, 0, 0.35);
+			text-align: center;
+			color: white;
+			border-radius: 5px;
+		}
+
+		.composicion:hover {
+			z-index: 3;
+		}
 	</style>
 </head>
-
 <body>
-	<!-- Navbar-->
+  <!-- Navbar-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<!-- Titulo de inicio-->
 		<a class="navbar-brand" href="index.html">
@@ -99,58 +126,68 @@
 			</a>
 		</div>
 	</nav>
-	<!-- Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Ingrese sus datos</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form>
-						<div class="form-group">
-							<input type="text" class="form-control" name="nombre" aria-describedby="emailHelp"
-								placeholder="Nombre y apellido">
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control" name="correo" placeholder="Correo electronico">
-						</div>
-
-						<div class="input-group">
-							<div class="custom-file">
-								<input name='archivo' type="file" class="custom-file-input" id="inputGroupFile04"
-									aria-describedby="inputGroupFileAddon04">
-								<label class="custom-file-label" for="inputGroupFile04">Cargue CV</label>
-							</div>
-						</div>
-
-						<button type="submit" class="btn btn-primary mt-3 btn-block">Enviar</button>
-					</form>
-				</div>
+	<!--MODAL
+		
+	fin MODAL-->
+	<div>
+		<div class="d-flex flex-wrap justify-content-around mt-5">
+			<div class="d-flex justify-content-center">
+					<img class="img-fluid m-2 px-3 " style="height:300px" src="res/ilust/postres/Alfajorformato1.png" alt="">
+					<div class="composicion align-self-center">
+						<p class="m-0">
+							ALFAJOR HELADO
+						</p>
+					</div>
+			</div>
+			<div class="d-flex justify-content-center">
+					<img class="img-fluid m-2 px-3 " style="height:300px" src="res/ilust/postres/Capelina.png" alt="">
+					<div class="composicion align-self-center">
+						<p class="m-0">
+							CAPELINA
+						</p>
+					</div>
+			</div>
+			<div class="d-flex justify-content-center">
+					<img class="img-fluid m-2 px-3 " style="height:300px" src="res/ilust/postres/Cubanonformato1.png" alt="">
+					<div class="composicion align-self-center">
+						<p class="m-0">
+							CUBANON
+						</p>
+					</div>
+			</div>
+			<div class="d-flex justify-content-center">
+					<img class="img-fluid m-2 px-3 " style="height:300px" src="res/ilust/postres/Fuentehelada.png" alt="">
+					<div class="composicion align-self-center">
+						<p class="m-0">
+							FUENTE HELADA
+						</p>
+					</div>
+			</div>
+			<div class="d-flex justify-content-center">
+					<img class="img-fluid m-2 px-3 " style="height:300px" src="res/ilust/postres/Licuado.png" alt="">
+					<div class="composicion align-self-center">
+						<p class="m-0">
+							LICUADO
+						</p>
+					</div>
+			</div>
+			<div class="d-flex justify-content-center">
+					<img class="img-fluid m-2 px-3 " style="height:300px" src="res/ilust/postres/Soft.png" alt="">
+					<div class="composicion align-self-center">
+						<p class="m-0">
+							SOFT
+						</p>
+					</div>
+			</div>
+			<div class="d-flex justify-content-center">
+					<img class="img-fluid m-2 px-3 " style="height:300px" src="res/ilust/postres/Vaso.png" alt="">
+					<div class="composicion align-self-center">
+						<p class="m-0">
+							VASO
+						</p>
+					</div>
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid mt-5">
-		<div class="d-flex flex-wrap justify-content-center">
-			<img class="" src="res/logoLiloletas.png" alt="">
-			<img class="img-fluid" style="height:280px" src="res/ilust/liloletas/13.png" alt="">
-			<img class="img-fluid" style="height:280px" src="res/ilust/liloletas/14.png" alt="">
-			<img class="img-fluid" style="height:280px" src="res/ilust/liloletas/15.png" alt="">
-			<img class="img-fluid" style="height:280px" src="res/ilust/liloletas/17.png" alt="">
-			<img class="img-fluid" style="height:280px" src="res/ilust/liloletas/18.png" alt="">
-			<img class="img-fluid" style="height:280px" src="res/ilust/liloletas/19.png" alt="">
-			<img class="img-fluid" style="height:280px" src="res/ilust/liloletas/3.png" alt="">
-			<img class="img-fluid" style="height:280px" src="res/ilust/liloletas/5.png" alt="">
-			<img class="img-fluid" style="height:280px" src="res/ilust/liloletas/7.png" alt="">
-			<img class="img-fluid" style="height:280px" src="res/ilust/liloletas/8.png" alt="">
-			<img class="img-fluid" style="height:280px" src="res/ilust/liloletas/16.png" alt="">
-		</div>
-	</div>
-
 </body>
-
 </html>
