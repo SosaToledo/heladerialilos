@@ -38,6 +38,15 @@
 			footer {
 				background-color: white;
 			}
+
+			.verticalmente-centrado {
+				min-height: auto !important;
+				/* Fallback for browsers do NOT support vh unit */
+				min-height: auto !important;
+				/* These two lines are counted as one :-)       */
+				display: inherit;
+				align-items: inherit;
+			}
 		}
 
 		@font-face {
@@ -107,6 +116,15 @@
 
 		.contenedor-sucursales {
 			max-width: 80%;
+		}
+
+		.verticalmente-centrado {
+			min-height: 80%;
+			/* Fallback for browsers do NOT support vh unit */
+			min-height: 80vh;
+			/* These two lines are counted as one :-)       */
+			display: flex;
+			align-items: center;
 		}
 	</style>
 	<!-- Navbar-->
@@ -186,11 +204,11 @@
 		</div>
 	</div>
 
-	<div class="container-fluid contenedor-sucursales">
+	<div class="container-fluid contenedor-sucursales  verticalmente-centrado">
 
 		<div class="row mt-3">
-			<div class="col-md-3">
-				<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+			<div class="col-md-3 verticalmente-centrado">
+				<div class="nav flex-column nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
 					<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
 						aria-controls="v-pills-home" aria-selected="true">
 						<i class="fa fa-map-marker"></i>
@@ -219,13 +237,13 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-md-9">
+			<div class="col-md-9 verticalmente-centrado">
 				<div class="tab-content" id="v-pills-tabContent">
 					<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
 						aria-labelledby="v-pills-home-tab">
 						<div class="row">
 							<div class="col-md-5">
-								<img class="img-sucursal mt-5" src="res/sucursalRocha.JPG" alt="Sucursal de Rocha">
+								<img class="img-sucursal mt-5" src="res/sucursalSada.jpg" alt="Sucursal de Rocha">
 								<h4 class="text-center mt-3">
 									Av Rocha 693 <br>
 									02477 64-3364 <br>
@@ -248,7 +266,7 @@
 						aria-labelledby="v-pills-profile-tab">
 						<div class="row">
 							<div class="col-md-5">
-								<img class="img-sucursal mt-5" src="res/sucursalAlem.jpg" alt="Sucursal de Rocha">
+								<img class="img-sucursal mt-5" src="res/sucursalSada.jpg" alt="Sucursal de Dr Alem">
 								<h4 class="text-center mt-3">
 									Dr.Alem y 11 de septiembre <br>
 									02477 444144 <br>
@@ -272,7 +290,7 @@
 						aria-labelledby="v-pills-messages-tab">
 						<div class="row">
 							<div class="col-md-5">
-								<img class="img-sucursal mt-5" src="res/sucursalArrecifes.jpg" alt="Sucursal de Rocha">
+								<img class="img-sucursal mt-5" src="res/sucursalSada.jpg" alt="Sucursal de Arrecifes">
 								<h4 class="text-center mt-3">
 									Arrecifes - Dr. Carlos Merlassino 699 <br>
 									<a href="https://www.facebook.com/lilos.arrecifes.9"><i
@@ -294,7 +312,8 @@
 						aria-labelledby="v-pills-settings-tab">
 						<div class="row">
 							<div class="col-md-5">
-								<img class="img-sucursal mt-5" src="res/sucursalSada.jpg" alt="Sucursal de Rocha">
+								<img class="img-sucursal mt-5" src="res/sucursalSada.jpg"
+									alt="Sucursal de San Antonio de Areco">
 								<h4 class="text-center mt-3">
 									San Antonio de Areco - Irigoyen 452 <br>
 									02326 47-1032 <br>
