@@ -23,32 +23,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<title>Nosotros - Heladería Lilos</title>
-	<style>
-		@font-face {
-			font-family: 'AkzidenzGroteskBQSuperRegular';
-			src: url('res/fonts/AkzidenzGroteskBQSuperRegular.otf');
-		}
-	
-		nav {
-			font-family: 'AkzidenzGroteskBQSuperRegular'
-		}
-	
-		.iconofb {
-			color: hsla(221, 44%, 41%, 0.5);
-		}
-	
-		.iconoinsta {
-			color: rgba(225, 48, 108, 0.5);
-		}
-	
-		.iconofb:hover {
-			color: hsla(221, 60%, 50%, 1);
-		}
-	
-		.iconoinsta:hover {
-			color: rgba(225, 48, 108, 1);
-		}
-	</style>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -83,8 +58,8 @@
 					<a class="nav-link" href="sucursales.html">Sucursales</a>
 				</li>
 			</ul>
-			<!-- Button trigger modal -->
-			<!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+			<!-- Button trigger modal 
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
 				Carga tu CV
 			</button> -->
 			<a class="m-1" href="https://www.facebook.com/heladeria.lilos"><i style="font-size:20pt;"
@@ -107,7 +82,7 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<form>
+					<form action="correo.php" method="POST">
 						<div class="form-group">
 							<input type="text" class="form-control" name="nombre" aria-describedby="emailHelp"
 								placeholder="Nombre y apellido">

@@ -22,46 +22,7 @@
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-	<style>
-		div #liloletas, div img{
-			height: 280px;
-		}
-		#liloletas:hover{
-			height: 320px;
-		}
-
-		@font-face {
-			font-family: 'AkzidenzGroteskBQSuperRegular';
-			src: url('res/fonts/AkzidenzGroteskBQSuperRegular.otf');
-		}
-
-		nav {
-			font-family: 'AkzidenzGroteskBQSuperRegular'
-		}
-
-		.iconofb {
-			color: hsla(221, 44%, 41%, 0.5);
-		}
-
-		.iconoinsta {
-			color: rgba(225, 48, 108, 0.5);
-		}
-
-		.iconofb:hover {
-			color: hsla(221, 60%, 50%, 1);
-		}
-
-		.iconoinsta:hover {
-			color: rgba(225, 48, 108, 1);
-		}
-
-		@media (max-width: 576px){
-			div #liloletas{
-				height: 220px;
-			}
-		}
-	</style>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -69,7 +30,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<!-- Titulo de inicio-->
 		<a class="navbar-brand" href="index.html">
-			<img src="res/logo-solo-verde.png" width="60" height="30" class="d-inline-block align-top" alt="">
+			<img style="background: none;" src="res/logo-solo-verde.png" width="60" height="30" class="d-inline-block align-top" alt="">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -145,7 +106,7 @@
 	</div>
 	<div class="container-fluid mt-5">
 		<div class="d-flex flex-wrap justify-content-center">
-			<img class="" src="res/logoLiloletas.png" alt="">
+			<img id="liloletas" src="res/logoLiloletas.png" alt="">
 			<img id="liloletas" class="img-fluid" src="res/ilust/liloletas/13.png" alt="">
 			<img id="liloletas" class="img-fluid" src="res/ilust/liloletas/14.png" alt="">
 			<img id="liloletas" class="img-fluid" src="res/ilust/liloletas/15.png" alt="">

@@ -1,0 +1,89 @@
+/*Universal*/
+  @font-face {
+    font-family: 'AkzidenzGroteskBQSuperRegular';
+    src: url('../res/fonts/AkzidenzGroteskBQSuperRegular.otf');
+  }
+  a button{
+    text-align: center;
+    text-transform: uppercase;
+  }
+  nav {
+    font-family: 'AkzidenzGroteskBQSuperRegular'
+  }
+  .iconofb {
+    color: hsla(221, 44%, 41%, 0.5);
+  }
+  .iconoinsta {
+    color: rgba(225, 48, 108, 0.5);
+  }
+  .iconofb:hover {
+    color: hsla(221, 60%, 50%, 1);
+  }
+  .iconoinsta:hover {
+    color: rgba(225, 48, 108, 1);
+  }
+/*fin Universal*/
+
+/*SABORES.html*/
+h2{
+  font-family: 'AkzidenzGroteskBQSuperRegular'
+}
+#productos{
+  text-align: center;
+}
+#productos div{
+  margin-top: 1%;
+}
+nav {
+  font-family: 'AkzidenzGroteskBQSuperRegular'
+}
+
+#destacado {
+  padding: 0 4%;
+  background-color: white;
+}
+
+.card {
+  border: none !important;
+}
+
+img {
+  position: relative;
+  background-color: white;
+  z-index: 2
+}
+
+img:hover {
+  z-index: initial
+}
+
+.composicion {
+  position: absolute;
+  top: 20%;
+  z-index: 1;
+  margin: 10%;
+  background-color: rgba(0, 0, 0, 0.35);
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  font-family: 'AkzidenzGroteskBQSuperRegular';
+  border: 1px solid black;
+}
+
+.composicion:hover {
+  z-index: 3;
+}
+
+#dietTitulo{
+  border-style: double;
+  border-radius: 10px
+}
+.destacado{
+  margin: 20%
+}
+/*fin sabores*/
+
+/*LILOLETAS.html*/
+#liloletas{
+  height: 280px;
+}
