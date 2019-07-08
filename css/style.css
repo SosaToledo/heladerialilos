@@ -1,4 +1,8 @@
 /*Universal*/
+
+  body{
+    background-image: url("../res/fondo.png");
+  }
   @font-face {
     font-family: 'AkzidenzGroteskBQSuperRegular';
     src: url('../res/fonts/AkzidenzGroteskBQSuperRegular.otf');
@@ -49,7 +53,6 @@ nav {
 
 img {
   position: relative;
-  background-color: white;
   z-index: 2
 }
 
@@ -61,17 +64,19 @@ img:hover {
   position: absolute;
   top: 20%;
   z-index: 1;
-  margin: 10%;
+  margin: 2%;
   background-color: rgba(0, 0, 0, 0.35);
   text-align: center;
   color: white;
   border-radius: 5px;
   font-family: 'AkzidenzGroteskBQSuperRegular';
   border: 1px solid black;
+  opacity: 0;
 }
 
 .composicion:hover {
   z-index: 3;
+  opacity: 1;
 }
 
 #dietTitulo{
@@ -86,4 +91,6 @@ img:hover {
 /*LILOLETAS.html*/
 #liloletas{
   height: 280px;
+  position: relative;
+  background-color: none;
 }

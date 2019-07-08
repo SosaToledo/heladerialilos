@@ -25,6 +25,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	
+	
 </head>
 <body id="index">
 	<!-- Navbar-->
@@ -58,16 +59,17 @@
 					<a class="nav-link" href="sucursales.html">Sucursales</a>
 				</li>
 			</ul>
-			<!-- Button trigger modal -->
-			<!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-				Carga tu CV
-			</button> -->
 			<a class="m-1" href="https://www.facebook.com/heladeria.lilos"><i style="font-size:20pt;"
 					class="iconofb fa fa-facebook-square"></i>
 			</a>
-			<a class="m-1 mr-5" href="https://www.instagram.com/lilos.artesanal/?hl=es"><i style="font-size:20pt;"
+			<a class="m-1 mr-3" href="https://www.instagram.com/lilos.artesanal/?hl=es"><i style="font-size:20pt;"
 					class="iconoinsta fa fa-instagram"></i>
 			</a>
+			<!-- Button trigger modal -->
+			<!---->
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+				Carga tu CV
+			</button> 
 		</div>
 	</nav>
 	<!-- Modal -->
@@ -82,7 +84,7 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<form>
+					<form action="correo.php" method="POST" enctype="multipart/form-data">
 						<div class="form-group">
 							<input type="text" class="form-control" name="nombre" aria-describedby="emailHelp"
 								placeholder="Nombre y apellido">
@@ -95,7 +97,7 @@
 							<div class="custom-file">
 								<input name='archivo' type="file" class="custom-file-input" id="inputGroupFile04"
 									aria-describedby="inputGroupFileAddon04">
-								<label class="custom-file-label" for="inputGroupFile04">Cargue CV</label>
+								<label class="custom-file-label" for="inputGroupFile04"></label>
 							</div>
 						</div>
 						<button type="submit" class="btn btn-primary mt-3 btn-block">Enviar</button>
